@@ -20,7 +20,3 @@
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 echo 'src-git Openclash https://github.com/vernesong/OpenClash' >>feeds.conf.default
 
-# argon
-cd lede/package/lean  
-rm -rf luci-theme-argon  
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
