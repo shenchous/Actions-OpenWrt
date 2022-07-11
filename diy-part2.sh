@@ -19,3 +19,6 @@ sed -i 's/192.168.1.1/192.168.50.1/g' package/base-files/files/bin/config_genera
 cd lede/package/lean  
 rm -rf luci-theme-argon  
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+
+# set default theme to argon
+sed -i '/uci commit luci/i\uci set luci.main.mediaurlbase="/luci-static/argon"' `find package -type f -path '*/default-settings/files/*-default-settings'`
