@@ -23,4 +23,4 @@ echo 'src-git Openclash https://github.com/vernesong/OpenClash' >>feeds.conf.def
 # argon
 cd lede/package/lean  
 rm -rf luci-theme-argon  
-git clone https://github.com/jerrykuku/luci-theme-argon.git 
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
